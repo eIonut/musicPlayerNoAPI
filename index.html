@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>Music player by eIonut</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="artist-img-desc-container">
+          <div class="img-container">
+            <img id="music-image" src="/photos/enemies.jpeg" alt="" />
+          </div>
+          <h3 class="song-name names"></h3>
+          <h4 class="singer-name names"></h4>
+        </div>
+        <div class="play-container">
+          <i id="previous-btn" class="fas fa-step-backward"></i>
+          <i id="play-btn" class="fas fa-play-circle"></i>
+          <i id="next-btn" class="fas fa-step-forward"></i>
+        </div>
+
+        <div class="volume-container">
+          <div id="Progress_Status">
+            <div id="myprogressBar"></div>
+          </div>
+          <!-- <progress id="play-timer-bar" value="50" max="100">32%</progress> -->
+          <p id="song-duration"></p>
+          <i id="volume" class="fas fa-volume-up"></i>
+          <input
+            id="adjust-volume"
+            type="range"
+            min="0"
+            max="1"
+            value="0.5"
+            step="0.1"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<script src="app.js"></script>
